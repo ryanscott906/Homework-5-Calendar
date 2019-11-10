@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron"> <!--Top Section-->
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    
+    <div id="scheduleContainer">
+      <div class="input-group mb-3" id="hourlyRow9"> <!--9AM Row-->
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="dayTime9">9AM</span>
+        </div>
+        <input type="text" class="form-control" id="noteBox9" placeholder="Insert Notes" aria-label="Insert Notes" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="saveButton9"><em>Save Changes</em></button>
+        </div>
+      </div>
+     
+      <div class="input-group mb-3" id="hourlyRow10">  <!--10AM Row-->
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="dayTime10">10AM</span>
+        </div>
+        <input type="text" class="form-control" id="noteBox10" placeholder="Insert Notes" aria-label="Insert Notes" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="saveButton10"><em>Save Changes</em></button>
+        </div>
+      </div>
+      
+      <div class="input-group mb-3" id="hourlyRow11"> <!--11AM Row-->
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="dayTime11">11AM</span>
+        </div>
+        <input type="text" class="form-control" id="noteBox11" placeholder="Insert Notes" aria-label="Insert Notes" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="saveButton11"><em>Save Changes</em></button>
+        </div>
+      </div>
+      
+      <div class="input-group mb-3" id="hourlyRow12"> <!--12PM Row-->
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="dayTime12">12PM</span>
+        </div>
+        <input type="text" class="form-control" id="noteBox12" placeholder="Insert Notes" aria-label="Insert Notes" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="saveButton12"><em>Save Changes</em></button>
+        </div>
+      </div>
+      
+      <div class="input-group mb-3" id="hourlyRow1"> <!--1PM Row-->
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="dayTime1">1PM</span>
+        </div>
+        <input type="text" class="form-control" id="noteBox1" placeholder="Insert Notes" aria-label="Insert Notes" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="saveButton1"><em>Save Changes</em></button>
+        </div>
+      </div>
+      
+      <div class="input-group mb-3" id="hourlyRow2"> <!--2PM Row-->
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="dayTime2">2PM</span>
+        </div>
+        <input type="text" class="form-control" id="noteBox2" placeholder="Insert Notes" aria-label="Insert Notes" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="saveButton2"><em>Save Changes</em></button>
+        </div>
+      </div>
+    
+      <div class="input-group mb-3" id="hourlyRow3"> <!--3PM Row-->
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="dayTime3">3PM</span>
+        </div>
+        <input type="text" class="form-control" id="noteBox3" placeholder="Insert Notes" aria-label="Insert Notes" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="saveButton3"><em>Save Changes</em></button>
+        </div>
+      </div>
+      
+      <div class="input-group mb-3" id="hourlyRow4"> <!--4PM Row-->
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="dayTime4">4PM</span>
+        </div>
+        <input type="text" class="form-control" id="noteBox4" placeholder="Insert Notes" aria-label="Insert Notes" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="saveButton4"><em>Save Changes</em></button>
+        </div>
+      </div>
+      
+      <div class="input-group mb-3" id="hourlyRow5"> <!--5PM Row-->
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="dayTime5">5PM</span>
+        </div>
+        <input type="text" class="form-control" id="noteBox5" placeholder="Insert Notes" aria-label="Insert Notes" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="saveButton5"><em>Save Changes</em></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
